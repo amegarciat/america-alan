@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparativo real de tarifas — América & Alan</title>
+<meta property="og:title" content="América & Alan · Comparativo real de tarifas">
+<meta property="og:description" content="Lo que realmente cuesta reservar por fuera vs. con el evento">
+<meta property="og:image" content="https://amegarciat.github.io/america-alan/pass.png">
+<meta property="og:url" content="https://amegarciat.github.io/america-alan/comparativo_real_invitados.html">
+<meta property="og:type" content="website">
+<meta name="description" content="Comparativo real de tarifas para invitados">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://amegarciat.github.io/america-alan/pass.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --sand:#F5EFE4;--sand2:#EDE3D2;--sand3:#D9CBBA;
+  --terra:#C8936A;--terra2:#A8703E;
+  --sage:#9CAF88;--sage2:#7A9E8A;
+  --cream:#FAF7F2;--cream2:#F2EDE4;
+  --text:#2E221A;--text2:#7A5C40;--text3:#A89080;
+  --white:#FFFFFF;
+}
+body{background:linear-gradient(160deg,#E8DFD0 0%,#D4C9B8 100%);min-height:100vh;display:flex;justify-content:center;padding:40px 20px;font-family:'Jost',sans-serif;}
+.page{width:600px;background:var(--cream);border-radius:28px;overflow:hidden;box-shadow:0 24px 80px rgba(46,34,26,0.25);}
+
+@media print {
+  @page { size: letter; margin: 0; }
+  html, body { width:8.5in; height:auto; background:white!important; padding:0!important; margin:0!important; display:block!important; -webkit-print-color-adjust:exact!important; print-color-adjust:exact!important; }
+  .page { width:8.5in!important; max-width:8.5in!important; border-radius:0!important; box-shadow:none!important; overflow:visible!important; }
+  .hero,.section,.scenario,.footer{ break-inside:avoid!important; page-break-inside:avoid!important; }
+}
+
+/* HERO */
+.hero{position:relative;background:#2E221A;padding:48px 40px 36px;text-align:center;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#3D2E1E 0%,#2E221A 50%,#1E1610 100%);}
+.hero-circle1{position:absolute;top:-60px;right:-60px;width:220px;height:220px;border-radius:50%;border:1px solid rgba(200,147,106,0.15);}
+.hero-content{position:relative;z-index:2;}
+.hero-eyebrow{font-size:10px;font-weight:400;letter-spacing:0.26em;color:var(--terra);text-transform:uppercase;margin-bottom:14px;}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:400;color:var(--white);line-height:1.2;margin-bottom:10px;}
+.hero-title em{font-style:italic;color:var(--terra);}
+.hero-sub{font-size:12px;font-weight:300;color:rgba(255,255,255,0.6);line-height:1.6;max-width:420px;margin:10px auto 0;}
+
+/* FX BADGE */
+.fx-strip{display:flex;justify-content:center;gap:6px;background:var(--cream2);padding:12px 20px;font-size:10.5px;color:var(--text2);text-align:center;border-bottom:1px solid rgba(122,92,64,0.08);}
+.fx-strip strong{color:var(--terra2);}
+
+/* SECTION */
+.section{padding:24px 32px;border-bottom:1px solid rgba(122,92,64,0.07);}
+.sec-eyebrow{font-size:9.5px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:var(--terra);margin-bottom:6px;}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--text);line-height:1.2;margin-bottom:12px;}
+.sec-title em{font-style:italic;color:var(--terra);}
+
+/* PASS FEE CALLOUT */
+.pass-fee{background:var(--sand);border:1px solid rgba(122,92,64,0.12);border-radius:14px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;}
+.pass-fee-label{font-size:11.5px;color:var(--text2);line-height:1.5;}
+.pass-fee-num{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--terra2);font-weight:500;text-align:right;white-space:nowrap;}
+.pass-fee-num small{display:block;font-family:'Jost',sans-serif;font-size:9.5px;color:var(--text3);font-weight:400;}
+
+/* SCENARIO CARD */
+.scenario{background:var(--white);border:1px solid rgba(122,92,64,0.12);border-radius:16px;padding:22px;margin-bottom:14px;}
+.scenario:last-child{margin-bottom:0;}
+.bar-row{margin-bottom:16px;}
+.bar-row:last-of-type{margin-bottom:0;}
+.bar-label{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;}
+.bar-label-text{font-size:11.5px;color:var(--text2);font-weight:500;}
+.bar-label-val{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--text);font-weight:500;}
+.bar-track{background:var(--cream2);border-radius:99px;height:14px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:99px;}
+.bar-fill.event{background:linear-gradient(90deg,var(--terra),var(--terra2));}
+.bar-fill.out{background:linear-gradient(90deg,var(--sage),var(--sage2));}
+.bar-note{font-size:10px;color:var(--text3);margin-top:4px;}
+.bar-benefits{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;}
+.bar-chip{font-size:10px;padding:4px 9px;border-radius:99px;white-space:nowrap;}
+.bar-chip.yes{background:rgba(156,175,136,0.16);color:var(--sage2);border:1px solid rgba(122,158,138,0.3);}
+.bar-chip.no{background:rgba(122,92,64,0.08);color:var(--text3);border:1px solid rgba(122,92,64,0.15);text-decoration:line-through;}
+
+.verdict{margin-top:16px;border-radius:12px;padding:14px 16px;font-size:13px;line-height:1.6;font-weight:500;display:flex;gap:10px;align-items:flex-start;}
+.verdict-icon{font-size:20px;flex-shrink:0;line-height:1;}
+.verdict.win{background:rgba(156,175,136,0.14);color:var(--sage2);border:1px solid rgba(122,158,138,0.3);}
+.verdict.close{background:rgba(200,147,106,0.12);color:var(--terra2);border:1px solid rgba(200,147,106,0.28);}
+
+/* BENEFITS LOST */
+.benefits-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.benefit-card{border-radius:12px;padding:13px 14px;}
+.benefit-card.have{background:linear-gradient(160deg,rgba(156,175,136,0.14),rgba(156,175,136,0.05));border:1px solid rgba(122,158,138,0.3);}
+.benefit-card.miss{background:var(--sand);border:1px solid rgba(122,92,64,0.12);}
+.benefit-head{font-size:10px;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:8px;}
+.benefit-card.have .benefit-head{color:var(--sage2);}
+.benefit-card.miss .benefit-head{color:var(--text3);}
+.benefit-item{font-size:11px;color:var(--text2);padding:3px 0;line-height:1.5;}
+
+/* QUOTES */
+.quote-card{background:var(--sand);border-radius:12px;padding:14px 16px;margin-bottom:8px;}
+.quote-card:last-child{margin-bottom:0;}
+.quote-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--text);line-height:1.5;margin-bottom:6px;}
+.quote-who{font-size:10px;color:var(--text3);letter-spacing:0.04em;}
+
+/* ASK BOX */
+.ask-box{background:#2E221A;border-radius:16px;padding:22px 24px;text-align:center;}
+.ask-title{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--white);margin-bottom:8px;}
+.ask-title em{color:var(--terra);font-style:italic;}
+.ask-body{font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;}
+
+/* FOOTER */
+.footer{padding:24px 32px;text-align:center;}
+.footer-names{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--text);margin-bottom:4px;}
+.footer-sub{font-size:9.5px;letter-spacing:0.14em;color:var(--text3);text-transform:uppercase;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-circle1"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">América &amp; Alan · Moon Palace Cancún</div>
+      <div class="hero-title">El comparativo <em>real</em><br>de tarifas</div>
+      <div class="hero-sub">Sumando lo que de verdad cuesta reservar por fuera — incluido el wedding pass — la diferencia no es la que parece a primera vista.</div>
+    </div>
+  </div>
+
+  <div class="fx-strip">Wedding pass: <strong>$165 USD</strong> por persona · Tipo de cambio usado: <strong>$17.50 MXN</strong> · Equivale a <strong>$2,887.50 MXN</strong> por persona</div>
+
+  <!-- ESCENARIO 1 -->
+  <div class="section">
+    <div class="sec-eyebrow">Comparativo</div>
+    <div class="sec-title">3 noches, <em>sin transporte</em></div>
+
+    <div class="scenario">
+      <div class="bar-row">
+        <div class="bar-label"><div class="bar-label-text">🏨 Reservando con el evento</div><div class="bar-label-val">$31,660</div></div>
+        <div class="bar-track"><div class="bar-fill event" style="width:100%"></div></div>
+        <div class="bar-benefits">
+          <div class="bar-chip yes">✓ Ceremonia</div>
+          <div class="bar-chip yes">✓ Cóctel</div>
+          <div class="bar-chip yes">✓ Recepción</div>
+          <div class="bar-chip yes">✓ After</div>
+          <div class="bar-chip yes">✓ Transporte</div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label"><div class="bar-label-text">🌐 Por fuera + wedding pass</div><div class="bar-label-val">$31,006</div></div>
+        <div class="bar-track"><div class="bar-fill out" style="width:98%"></div></div>
+        <div class="bar-note">$25,231 de tarifa pública + $5,775 de wedding pass (2 personas)</div>
+        <div class="bar-benefits">
+          <div class="bar-chip no">Ceremonia</div>
+          <div class="bar-chip no">Cóctel</div>
+          <div class="bar-chip yes">✓ Recepción</div>
+          <div class="bar-chip no">After</div>
+          <div class="bar-chip no">Transporte</div>
+        </div>
+      </div>
+      <div class="verdict close"><div class="verdict-icon">🤏</div><div>La diferencia real es de solo <strong>$654 MXN</strong> — prácticamente se empata sumando el wedding pass. Y con el evento, entras a todo.</div></div>
+    </div>
+  </div>
+
+  <!-- BENEFICIOS -->
+  <div class="section">
+    <div class="sec-eyebrow">Más allá del precio</div>
+    <div class="sec-title">Lo que <em>sí o sí</em> tienes con nosotros</div>
+    <div class="benefits-grid">
+      <div class="benefit-card have">
+        <div class="benefit-head">✅ Con el evento</div>
+        <div class="benefit-item">🥂 Entrada al cóctel</div>
+        <div class="benefit-item">🚐 Traslado resuelto</div>
+        <div class="benefit-item">🔒 Lugar garantizado</div>
+        <div class="benefit-item">👯 Cerca del grupo</div>
+      </div>
+      <div class="benefit-card miss">
+        <div class="benefit-head">❌ Reservando por fuera</div>
+        <div class="benefit-item">🎟️ Wedding pass obligatorio</div>
+        <div class="benefit-item">🚫 Sin entrada al cóctel</div>
+        <div class="benefit-item">🚗 Traslado por tu cuenta</div>
+        <div class="benefit-item">⏳ Cupo limitado</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ASK -->
+  <div class="section" style="border-bottom:none;">
+    <div class="ask-box">
+      <div class="ask-title">¿Dudas para <em>reservar</em>?</div>
+      <div class="ask-body">Escríbenos directo — te ayudamos con tu reserva antes de que se cierre el bloque. 🤍</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-names">América &amp; Alan</div>
+    <div class="footer-sub">10 · Octubre · 2026 &nbsp;·&nbsp; Moon Palace Cancún</div>
+  </div>
+
+</div>
+</body>
+</html>
