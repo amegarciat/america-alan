@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Información para invitados que van por fuera — América & Alan</title>
+
+<!-- WhatsApp / Open Graph preview -->
+<meta property="og:title" content="América & Alan · Info para invitados que reservan por fuera">
+<meta property="og:description" content="Información para invitados que van por fuera">
+<meta property="og:image" content="pass.png">
+<meta property="og:type" content="website">
+<meta name="description" content="Información para invitados que van por fuera">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="pass.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --sand:#F5EFE4;--sand2:#EDE3D2;--sand3:#D9CBBA;
+  --terra:#C8936A;--terra2:#A8703E;
+  --sage:#9CAF88;--sage2:#7A9E8A;
+  --cream:#FAF7F2;--cream2:#F2EDE4;
+  --text:#2E221A;--text2:#7A5C40;--text3:#A89080;
+  --red:#B14A4A;--red-bg:rgba(177,74,74,0.07);--red-bd:rgba(177,74,74,0.22);
+  --white:#FFFFFF;
+}
+body{background:linear-gradient(160deg,#E8DFD0 0%,#D4C9B8 100%);min-height:100vh;display:flex;justify-content:center;padding:40px 20px;font-family:'Jost',sans-serif;}
+.page{width:560px;background:var(--cream);border-radius:28px;overflow:hidden;box-shadow:0 24px 80px rgba(46,34,26,0.25);}
+
+@media print {
+  @page { size: letter; margin: 0; }
+  html, body { width: 8.5in; height:auto; background:white!important; padding:0!important; margin:0!important; display:block!important; -webkit-print-color-adjust:exact!important; print-color-adjust:exact!important; }
+  .page { width:8.5in!important; max-width:8.5in!important; border-radius:0!important; box-shadow:none!important; overflow:visible!important; }
+  .hero,.section,.footer,.pass-card,.compare{ break-inside:avoid!important; page-break-inside:avoid!important; }
+}
+
+/* HERO */
+.hero{position:relative;background:#2E221A;padding:52px 40px 40px;text-align:center;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#3D2E1E 0%,#2E221A 50%,#1E1610 100%);}
+.hero-circle1{position:absolute;top:-60px;right:-60px;width:240px;height:240px;border-radius:50%;border:1px solid rgba(177,74,74,0.15);}
+.hero-circle3{position:absolute;bottom:-80px;left:-80px;width:280px;height:280px;border-radius:50%;border:1px solid rgba(156,175,136,0.1);}
+.hero-content{position:relative;z-index:2;}
+.hero-eyebrow{font-size:10px;font-weight:400;letter-spacing:0.28em;color:var(--terra);text-transform:uppercase;margin-bottom:16px;}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:400;color:var(--white);line-height:1.15;margin-bottom:14px;}
+.hero-title em{font-style:italic;color:var(--terra);}
+.hero-divider{width:48px;height:1px;background:linear-gradient(to right,transparent,var(--terra),transparent);margin:16px auto;}
+.hero-sub{font-size:12.5px;font-weight:300;color:rgba(255,255,255,0.65);line-height:1.6;max-width:400px;margin:0 auto;}
+
+/* SECTION */
+.section{padding:26px 36px;border-bottom:1px solid rgba(122,92,64,0.07);}
+.sec-eyebrow{font-size:9.5px;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;color:var(--terra);margin-bottom:6px;}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--text);line-height:1.2;margin-bottom:14px;}
+.sec-title em{font-style:italic;color:var(--terra);}
+.sec-body{font-size:12.5px;color:var(--text2);line-height:1.7;}
+
+/* PASS CARD */
+.pass-card{background:var(--sand);border:1px solid rgba(122,92,64,0.12);border-radius:16px;padding:20px 22px;margin-bottom:14px;}
+.pass-price-row{display:flex;align-items:baseline;gap:8px;margin-bottom:12px;}
+.pass-price{font-family:'Cormorant Garamond',serif;font-size:38px;color:var(--terra2);font-weight:500;}
+.pass-price-label{font-size:11px;color:var(--text3);letter-spacing:0.05em;}
+.pass-list{list-style:none;}
+.pass-list li{font-size:12.5px;color:var(--text2);padding:7px 0;border-bottom:0.5px solid rgba(122,92,64,0.1);display:flex;align-items:flex-start;gap:8px;line-height:1.5;}
+.pass-list li:last-child{border-bottom:none;}
+.pass-list li::before{content:'—';color:var(--terra);opacity:0.8;flex-shrink:0;}
+
+/* WARNING BOX */
+.warn-box{background:var(--red-bg);border:1px solid var(--red-bd);border-radius:14px;padding:16px 18px;margin-top:4px;}
+.warn-title{font-size:11.5px;font-weight:500;color:var(--red);letter-spacing:0.04em;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.warn-list{list-style:none;}
+.warn-list li{font-size:12px;color:#8A4444;padding:5px 0;line-height:1.55;display:flex;align-items:flex-start;gap:7px;}
+.warn-list li::before{content:'⚠';font-size:11px;opacity:0.75;flex-shrink:0;margin-top:1px;}
+
+/* COMPARE TABLE */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.compare-col{border-radius:14px;padding:16px 16px;}
+.compare-col.in{background:linear-gradient(160deg,rgba(156,175,136,0.14),rgba(156,175,136,0.05));border:1px solid rgba(122,158,138,0.3);}
+.compare-col.out{background:var(--red-bg);border:1px solid var(--red-bd);}
+.compare-head{font-size:11px;font-weight:500;letter-spacing:0.04em;margin-bottom:10px;text-transform:uppercase;}
+.compare-col.in .compare-head{color:var(--sage2);}
+.compare-col.out .compare-head{color:var(--red);}
+.compare-item{font-size:11.5px;line-height:1.55;padding:5px 0;color:var(--text2);}
+.compare-col.out .compare-item{color:#8A4444;}
+
+/* CTA */
+.cta-box{background:#2E221A;border-radius:16px;padding:22px 24px;text-align:center;}
+.cta-title{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--white);margin-bottom:8px;}
+.cta-title em{color:var(--terra);font-style:italic;}
+.cta-body{font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;}
+
+/* FOOTER */
+.footer{padding:26px 36px;text-align:center;}
+.footer-names{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--text);margin-bottom:4px;}
+.footer-sub{font-size:10px;letter-spacing:0.15em;color:var(--text3);text-transform:uppercase;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-circle1"></div>
+    <div class="hero-circle3"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">América &amp; Alan · Moon Palace Cancún</div>
+      <div class="hero-title">Información para <em>invitados</em><br>que van por fuera</div>
+      <div class="hero-divider"></div>
+      <div class="hero-sub">Antes de reservar por tu cuenta, lee esto — cambia bastante lo que puedes vivir con nosotros ese fin de semana.</div>
+    </div>
+  </div>
+
+  <!-- QUÉ PASA SI RESERVAS POR FUERA -->
+  <div class="section">
+    <div class="sec-eyebrow">Importante</div>
+    <div class="sec-title">Si no reservas <em>con nosotros</em></div>
+    <div class="sec-body" style="margin-bottom:14px;">Si decides hospedarte por tu cuenta (fuera de nuestro bloque de habitaciones), necesitarás comprar un <strong style="color:var(--text)">Wedding Pass</strong> para poder ingresar al resort el día del evento.</div>
+
+    <div class="pass-card">
+      <div class="pass-price-row">
+        <div class="pass-price">$165 USD</div>
+        <div class="pass-price-label">por persona</div>
+      </div>
+      <ul class="pass-list">
+        <li>Cupo limitado — sujeto a disponibilidad, no garantizado</li>
+        <li>No incluye transportación</li>
+        <li>No incluye entrada al cóctel de la boda</li>
+      </ul>
+    </div>
+
+    <div class="warn-box">
+      <div class="warn-title">Antes de arriesgarte, considera:</div>
+      <ul class="warn-list">
+        <li>Los wedding pass se agotan — si tardas en decidir, puede que ya no haya disponibilidad ese día.</li>
+        <li>Sin el pass no hay acceso al resort el día de la boda, sin excepción.</li>
+        <li>El cóctel es parte central de la celebración — quien reserva por fuera se lo pierde, no hay forma de agregarlo después.</li>
+        <li>Tendrás que resolver tu propio traslado hasta el resort, en una zona donde el transporte no siempre es fácil de conseguir el mismo día.</li>
+        <li>No estarás hospedado junto al resto del grupo, así que te pierdes la convivencia antes y después del evento.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- COMPARATIVO -->
+  <div class="section">
+    <div class="sec-eyebrow">La diferencia real</div>
+    <div class="sec-title">Con nosotros <em>vs.</em> por tu cuenta</div>
+    <div class="compare">
+      <div class="compare-col in">
+        <div class="compare-head">✓ Reservando con nosotros</div>
+        <div class="compare-item">Tarifa preferencial de grupo</div>
+        <div class="compare-item">Acceso completo: ceremonia, cóctel y recepción</div>
+        <div class="compare-item">Hospedado junto al resto del grupo</div>
+        <div class="compare-item">Lugar garantizado, sin depender de cupo</div>
+      </div>
+      <div class="compare-col out">
+        <div class="compare-head">✕ Reservando por fuera</div>
+        <div class="compare-item">Wedding pass: $165 USD extra por persona</div>
+        <div class="compare-item">Sin acceso al cóctel</div>
+        <div class="compare-item">Sin transportación incluida</div>
+        <div class="compare-item">Cupo limitado, no garantizado</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="section" style="border-bottom:none;">
+    <div class="cta-box">
+      <div class="cta-title">¿Dudas antes de <em>decidir</em>?</div>
+      <div class="cta-body">Escríbenos directo — te ayudamos a resolver tu reserva dentro del bloque antes de que se cierre. Es más simple, más económico y te asegura estar en cada momento con nosotros. 🤍</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-names">América &amp; Alan</div>
+    <div class="footer-sub">10 · Octubre · 2026 &nbsp;·&nbsp; Moon Palace Cancún</div>
+  </div>
+
+</div>
+</body>
+</html>
