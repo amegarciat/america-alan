@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preguntas frecuentes — América & Alan</title>
+<meta name="description" content="Preguntas frecuentes de la boda de América y Alan">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="América &amp; Alan">
+<meta property="og:title" content="América &amp; Alan | Preguntas frecuentes">
+<meta property="og:description" content="Todo lo que necesitas saber para acompañarnos en nuestra boda.">
+<meta property="og:url" content="https://amegarciat.github.io/america-alan/preguntas-frecuentes.html">
+<meta property="og:image" content="https://amegarciat.github.io/america-alan/preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://amegarciat.github.io/america-alan/preview.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Jost', sans-serif;
+  --color-bg: #FAF7F2;
+  --color-bg-alt: #F2ECE0;
+  --color-card: #FFFFFF;
+  --color-text: #2E2A24;
+  --color-text-soft: #7A7264;
+  --color-accent: #C8936A;
+  --color-accent2: #A8703E;
+  --color-accent-soft: #E4D3B8;
+  --color-olive: #9CAF88;
+  --color-border: #E6DFD1;
+  --radius: 18px;
+  --shadow-soft: 0 10px 40px rgba(46,42,36,0.06);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{overflow-x:hidden;}
+body{
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  background:#2E221A;
+  padding:70px 28px 56px;
+  text-align:center;
+  overflow:hidden;
+}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#3D2E1E 0%,#2E221A 50%,#1E1610 100%);}
+.hero-content{position:relative;z-index:2;max-width:520px;margin:0 auto;}
+.hero-eyebrow{font-size:11px;font-weight:400;letter-spacing:0.26em;color:var(--color-accent);text-transform:uppercase;margin-bottom:16px;}
+.hero h1{font-family:var(--font-serif);font-weight:400;font-style:italic;font-size:clamp(32px,7vw,48px);color:#fff;margin-bottom:16px;}
+.hero p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.6);line-height:1.8;}
+
+/* RESERVA CTA */
+.reserva-section{padding:36px 24px 10px;}
+.reserva-card{
+  max-width:640px;margin:0 auto;
+  background:linear-gradient(160deg, #FFFDF9, #FBF3E6);
+  border:1px solid var(--color-accent-soft);
+  border-radius:var(--radius);
+  padding:40px 32px;
+  text-align:center;
+  box-shadow:var(--shadow-soft);
+}
+.reserva-eyebrow{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-accent2);margin-bottom:10px;}
+.reserva-card h2{font-family:var(--font-serif);font-style:italic;font-weight:500;font-size:26px;margin-bottom:16px;}
+.reserva-card p{font-size:13.5px;color:var(--color-text-soft);font-weight:300;margin-bottom:24px;max-width:420px;margin-left:auto;margin-right:auto;}
+.reserva-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:15px 34px;border-radius:99px;
+  background:var(--color-accent2);color:#fff;
+  font-family:var(--font-sans);font-size:12.5px;font-weight:500;
+  letter-spacing:0.06em;text-transform:uppercase;
+  text-decoration:none;
+  transition:transform 0.25s ease, box-shadow 0.25s ease;
+}
+.reserva-btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(168,112,62,0.3);}
+
+/* FAQ */
+.faq-section{padding:44px 24px 30px;max-width:680px;margin:0 auto;}
+.faq-title{text-align:center;font-family:var(--font-serif);font-style:italic;font-weight:400;font-size:24px;margin-bottom:28px;color:var(--color-text);}
+
+.faq-item{
+  background:var(--color-card);
+  border:1px solid var(--color-border);
+  border-radius:14px;
+  margin-bottom:12px;
+  overflow:hidden;
+}
+.faq-item summary{
+  list-style:none;
+  cursor:pointer;
+  padding:18px 22px;
+  font-family:var(--font-serif);
+  font-size:17px;
+  font-weight:500;
+  color:var(--color-text);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-chevron{
+  flex-shrink:0;
+  width:22px;height:22px;
+  border-radius:50%;
+  border:1px solid var(--color-accent-soft);
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;color:var(--color-accent2);
+  transition:transform 0.3s ease;
+}
+.faq-item[open] .faq-chevron{transform:rotate(45deg);}
+.faq-answer{
+  padding:0 22px 20px;
+  font-size:13.5px;
+  color:var(--color-text-soft);
+  font-weight:300;
+  line-height:1.75;
+}
+.faq-answer a{color:var(--color-accent2);text-decoration:underline;}
+.faq-answer strong{color:var(--color-text);font-weight:500;}
+
+/* ENVELOPE / FOOTER */
+.closing{
+  text-align:center;
+  padding:50px 24px 80px;
+  border-top:1px solid var(--color-border);
+  margin:30px 24px 0;
+}
+.closing .signature{font-family:var(--font-serif);font-style:italic;font-size:20px;color:var(--color-text);}
+.closing-sub{font-size:10px;letter-spacing:0.14em;color:var(--color-text-soft);text-transform:uppercase;margin-top:6px;}
+
+@media (max-width:640px){
+  .hero{padding:56px 20px 44px;}
+  .reserva-card{padding:32px 22px;}
+  .faq-item summary{font-size:15.5px;padding:16px 18px;}
+  .faq-answer{padding:0 18px 18px;}
+}
+</style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">América &amp; Alan · Moon Palace Cancún</div>
+      <h1>Preguntas frecuentes</h1>
+      <p>Aquí reunimos las dudas que más nos han preguntado. Si tienes alguna otra, escríbenos directo, con gusto te ayudamos.</p>
+    </div>
+  </header>
+
+  <section class="reserva-section">
+    <div class="reserva-card">
+      <div class="reserva-eyebrow">Reservaciones</div>
+      <h2>Accede a tu reserva o reserva aquí</h2>
+      <p>Ya sea que quieras hacer tu reserva por primera vez o dar seguimiento a una que ya tienes, todo se hace desde el mismo lugar.</p>
+      <a class="reserva-btn" href="https://reservasromance.com/reservas/Home/Index?eventoID=fd4b4bbd-3d9f-49fd-8c89-b1fe011e88d4" target="_blank" rel="noopener">Ir a reservaciones</a>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="faq-title">Todo lo que necesitas saber</div>
+
+    <details class="faq-item">
+      <summary>¿Cuál es el link para reservar? <span class="faq-chevron">+</span></summary>
+      <div class="faq-answer">
+        Entra a este link: <a href="https://reservasromance.com/reservas/Home/Index?eventoID=fd4b4bbd-3d9f-49fd-8c89-b1fe011e88d4" target="_blank" rel="noopener">reservasromance.com</a><br>
+        Da click en <strong>"RESERVAR"</strong> para poder acompañarnos ese día.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Cómo puedo hacer pagos en mi reserva ya hecha? <span class="faq-chevron">+</span></summary>
+      <div class="faq-answer">
+        Entra a este link: <a href="https://reservasromance.com/reservas/Home/Index?eventoID=fd4b4bbd-3d9f-49fd-8c89-b1fe011e88d4" target="_blank" rel="noopener">reservasromance.com</a><br>
+        Da click en <strong>"MI RESERVA"</strong> e ingresa el número de reservación que te dieron al momento de hacer tu reservación por primera vez. Es un número de 13 dígitos y te llega al correo cuando haces la reserva.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Qué métodos de pago hay para liquidar? <span class="faq-chevron">+</span></summary>
+      <div class="faq-answer">
+        Transferencia, depósito en efectivo, o pago con tarjeta de crédito/débito por medio de Paypal o Stripe.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Incluye transporte? <span class="faq-chevron">+</span></summary>
+      <div class="faq-answer">
+        Sí, tu reserva hecha por medio de nuestro evento incluye transportación <strong>AEROPUERTO–HOTEL / HOTEL–AEROPUERTO</strong>. Acercándose la fecha les mandaremos las instrucciones para subir su itinerario a la página de la boda.<br><br>
+        Dudas con Andrea · Bodas Romance 📱 <a href="https://wa.me/528120314908" target="_blank" rel="noopener">+52 1 81 2031 4908</a>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Cuál es el dress code? <span class="faq-chevron">+</span></summary>
+      <div class="faq-answer">
+        Dress code: ✦ Boho Elegante ✦<br>
+        Te compartimos el dress code completo en nuestro sitio: <a href="./dresscode.html">Ver dress code</a>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Cuál es nuestro itinerario? <span class="faq-chevron">+</span></summary>
+      <div class="faq-answer">
+        Te compartimos nuestro itinerario completo: <a href="./itinerario.html">Ver itinerario</a><br><br>
+        Cualquier modificación se les comunicará con tiempo, pero básicamente viernes, domingo y lunes son libres para disfrutar de este gran viaje.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Puedo hacer uso de las instalaciones antes de mi check-in? <span class="faq-chevron">+</span></summary>
+      <div class="faq-answer">
+        ¡Sí! Esta fue una de las razones por las cuales elegimos este hotel — puedes llegar desde la hora que tú quieras y empezar a hacer uso de las instalaciones, restaurantes y bares. El cuarto te lo entregarán hasta aproximadamente las 3 PM, pero puedes disfrutar desde temprano.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Puedo hacer uso de las instalaciones después de mi check-out? <span class="faq-chevron">+</span></summary>
+      <div class="faq-answer">
+        ¡Sí! Tendrás que entregar tu habitación a las 12 PM, pero puedes dejar tus maletas en recepción y seguir disfrutando de las amenidades todo el día. Si quieres aprovechar hasta el último minuto, te recomendamos comprar un vuelo de salida tarde.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Los menores pagan? <span class="faq-chevron">+</span></summary>
+      <div class="faq-answer">
+        Menores de 17 van <strong>¡GRATIS!</strong>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿A la celebración del sábado puedo llevar niños? <span class="faq-chevron">+</span></summary>
+      <div class="faq-answer">
+        Sí, entendemos que este es un viaje familiar y nuestros bebés André &amp; Aitana también nos acompañan — todos sus niños son bienvenidos.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>¿Hay servicio de niñera para la celebración? <span class="faq-chevron">+</span></summary>
+      <div class="faq-answer">
+        Sí, por favor solicítala en recepción el día de tu check-in para reservarla. Se requiere una reservación mínima de 4 horas y tiene un costo aproximado de 18 USD por hora.<br><br>
+        <em>*Precios sujetos a cambios sin previo aviso.</em>
+      </div>
+    </details>
+
+  </section>
+
+  <footer class="closing">
+    <div class="signature">América &amp; Alan</div>
+    <div class="closing-sub">10 · Octubre · 2026 · Moon Palace Cancún</div>
+  </footer>
+
+</body>
+</html>
